@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Alef&family=Carter+One&display=swap');
+
+
+* {
+    font-family: 'Carter One', cursive;
+}
+
+#main-header {
+    background-color: #88AAA9;
+}
+
+#btn-custom {
+    background-color: #88AAA9;
+    color: white;
+    outline: none;
+    border: none;
+}
+
+#btn-custom:hover {
+    background-color: #198754;;
+}
+
+#btn-custom:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+
+.delete {
+    cursor: pointer;
+    color: #88AAA9;
+}
+
+.delete:hover {
+    color: #DC3545;
+}
+
+.done {
+    cursor: pointer;
+    color: #88AAA9;
+}
+
+.done:hover{
+    color: #198754;
+}
+
+li {
+    font-family: 'Alef', sans-serif;
+}
+
+.heading {
+    background-color: #88AAA9;
+    color: white;
+    padding: 1rem;
+}
+
+.bg-darkpurple {
+    background-color: #404247;
+}
+
+#todo-list li, #done-list li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#confirmation {
+    position: absolute;
+    width: 250px;
+    height: 100px;
+    top: 0;
+    left: 45%;
+    background: #404247;
+    color: white;
+    font-size: 1.4rem;
+}
+
+#buttons {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#buttons button{
+    color: white;
+    background-color: #88AAA9;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    margin: 0.2rem 1rem;
+}
+
+#buttons button.yes:hover {
+    background-color: #198754;
+}
+
+#buttons button.no:hover {
+    background-color: #DC3545;
+}
+
+
+.ok {
+    color: white;
+    background-color: #88AAA9;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    margin: 0.2rem 1rem;
+}
+
+#warning {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 100px;
+    top: 0;
+    left: 40%;
+    background: #404247;
+    color: white;
+    font-size: 1.4rem;
+}
+
+#new-todo{
+    border: none;
+}
+
+#filter {
+    border: none;
+}
+
+#new-todo:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+#filter:focus{
+    outline: 0;
+    box-shadow: none;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    #todo-list li, #done-list li {
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+
+    #text-align-center {
+        text-align: center;
+    }
+
+    #warning{
+        left: 10%;
+    }
+
+    #confirmation{
+        left: 30%;
+    }
+
+    #done-list-container{
+        margin-top: 5rem;
+    }
+    
+    #btn-container{
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    #btn-custom {
+        width: 150px;
+    }
+}
